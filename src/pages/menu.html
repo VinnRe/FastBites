@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Fast Bites</title>
+    <link rel="icon" href="./assets/logo_fast_bites.png">
+    <link rel="stylesheet" href="./styles/menu.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../assets/logo_fast_bites.png" alt="logo">
+            <h1 class="poppins-bold">Fast Bites</h1>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="../index.html" class="nav-item">HOME</a></li>
+                <li><a href="./menu.html" class="nav-item">MENU</a></li>
+                <li><a href="./location.html" class="nav-item">LOCATIONS</a></li>
+                <li><a href="./deliveries.html" class="nav-item">DELIVERY</a></li>
+            </ul>
+        </nav>
+        <button class="settings__button" id="popupOpen"><span class="material-icons">settings</span></button>
+    </header>
+
+    <section class="popup__section" id="popupSection">
+        <div class="settings__container">
+            <div class="settings__container-top">
+                <button class="popup__close" id="popupClose"><span class="material-icons">close</span></button>
+            </div>
+            <div class="colorblind__container">
+                <h2>COLOR BLIND MODE</h2>
+                <div class="cb__container-row1">
+                    <button class="cb__button" id="cbNormal">
+                        <img src="../assets/normal.png" alt="normal_option">
+                        <h2>Normal</h2>
+                    </button>
+                    <button class="cb__button" id="cbPro">
+                        <img src="../assets/protanopia.png" alt="normal_option">
+                        <h2>Protanopia</h2>
+                    </button>
+                </div>
+                <div class="cb__container-row2">
+                    <button class="cb__button" id="cbDeu">
+                        <img src="../assets/dueteranopia.png" alt="normal_option">
+                        <h2>Deuteranopia</h2>
+                    </button>
+                    <button class="cb__button" id="cbTri">
+                        <img src="../assets/tritanopia.png" alt="normal_option">
+                        <h2>Tritanopia</h2>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2>Our Delicious Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="../assets/burger.jpg" alt="Burger">
+                <h3>Classic Burger</h3>
+                <p>Juicy beef patty, fresh lettuce, tomatoes, and our special sauce.</p>
+                <span>₱120</span>
+            </div>
+            <div class="menu-item">
+                <img src="../assets/fries.jpg" alt="Fries">
+                <h3>Golden Fries</h3>
+                <p>Perfectly crispy and seasoned to perfection.</p>
+                <span>₱50</span>
+            </div>
+            <div class="menu-item">
+                <img src="../assets/pizza.jpg" alt="Pizza">
+                <h3>Cheesy Pizza</h3>
+                <p>Loaded with mozzarella, pepperoni, and fresh basil.</p>
+                <span>₱150</span>
+            </div>
+            <div class="menu-item">
+                <img src="../assets/shake.jpg" alt="Shake">
+                <h3>Chocolate Shake</h3>
+                <p>Rich and creamy shake with a touch of chocolate goodness.</p>
+                <span>₱35</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fast Bites. All Rights Reserved.</p>
+    </footer>
+    <script src="./scripts/menu.js"></script>
+</body>
+</html>
