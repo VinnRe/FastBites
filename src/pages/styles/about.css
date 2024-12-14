@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+:root {
+  --primary: #8B0000; /* Crimson Red */
+  --secondary: #A22B2B; /* Deep Carmine */
+  --accent: #FFD700; /* Mustard Yellow */
+  --neutral: #3B3B3B; /* Steel Gray */
+  --neutral-hover: #414141; /* Steel Gray */
+  --white: #FFFFF0; /* Ivory White */
+
+  .poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--secondary);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--neutral);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--neutral-hover);
+  }
+}
+
+body {
+    background-color: var(--white);
+}
+  
+body.protanopia {
+    --primary: #6B0000; /* Muted Red */
+    --secondary: #8A2E2E; /* Muted Deep Red */
+    --accent: #4F86F7; /* Deep Blue */
+}
+
+body.deuteranopia {
+    --primary: #6B0000; /* Muted Red */
+    --secondary: #944141; /* Darker Muted Red */
+    --accent: #F4D03F; /* Muted Yellow */
+}
+
+body.tritanopia {
+    --primary: #6B0000; /* Crimson-like */
+    --secondary: #8A6E6E; /* Neutral Gray-Red */
+    --accent: #CCCCCC; /* Neutral Accent */
+}
+
+/* Header styles */
+/* Header and Navigation Styling */
+.header {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 1rem;
+}
+
+.header h1 {
+    font-size: 3rem;
+    color: var(--white);
+    font-weight: var(--poppins-bold);
+}
+
+.header .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header .logo img {
+    width: 7%;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 1rem;
+}
+
+.nav-list .nav-item {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: var(--poppins-bold);
+    transition: color 0.3s ease;
+}
+
+.nav-list .nav-item:hover {
+    color: var(--accent); /* Mustard Yellow Hover */
+}
+
+.settings__button {
+    color: var(--white);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.settings__button:hover {
+    color: var(--neutral);
+}
+
+.settings__button span {
+    font-size: 4rem;
+}
+
+.popup__section {
+    display: flex;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000050;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    color: var(--white);
+    height: 100vh;
+  }
+  
+  .popup__section-open {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .settings__container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary);
+    padding: 2rem;
+    overflow-y: auto;
+    height: 80vh;
+  }
+  
+  .settings__container-top {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .popup__close {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .popup__close span {
+    color: var(--white);
+    font-size: 3rem;
+  }
+  
+  .colorblind__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cb__container-row1, .cb__container-row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  } 
+  
+  .cb__button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .cb__button:hover {
+    transform: scale(1.1);
+  }
+
+/* About section styles */
+.about {
+    padding: 3rem 2rem;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Mission section styles */
+.mission {
+    background-color: var(--accent); /* Mustard yellow background */
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.mission-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.mission-container p {
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact section styles */
+.contact {
+    padding: 3rem 2rem;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-container p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-container a {
+    color: #FF5733; /* Orange color for links */
+    text-decoration: none;
+}
+
+.contact-container a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--neutral);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-top: 3rem;
+}
