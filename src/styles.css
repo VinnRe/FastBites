@@ -297,6 +297,11 @@ body.tritanopia {
   width: 20vw;
   border-radius: 2rem;
   margin-top: 1rem;
+  transition: 0.5s ease;
+}
+
+.list__item:hover {
+  transform: scale(1.1);
 }
 
 .list__item img {
