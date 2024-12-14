@@ -232,7 +232,6 @@ body.tritanopia {
   flex-direction: column;
   background-color: var(--primary);
   padding: 2rem;
-  /* border-radius: 1.5rem; */
   overflow-y: auto;
   height: 80vh;
 }
@@ -360,4 +359,13 @@ body.tritanopia {
 .image__carousel .next-btn:hover {
   background-color: var(--neutral-hover);
   cursor: pointer;
+}
+
+footer {
+  background-color: var(--neutral);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-top: 3rem;
 }
