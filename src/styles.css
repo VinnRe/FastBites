@@ -194,9 +194,8 @@ body.tritanopia {
   text-decoration: none;
   color: var(--white);
   width: 20vw;
-  
   border-radius: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .list__item img {
@@ -211,22 +210,28 @@ body.tritanopia {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   height: 100%;
-  padding: 2rem 2rem 0 2rem;
+  padding: 1.5rem 2rem 0 2rem;
 }
 
-.image__carousel .images {
+.carouselImages {
   display: flex;
-  width: 100vw;
-  align-items: center;
   justify-content: center;
-  transition: transform 0.5s ease-in-out;
+  align-items: center;
 }
 
 .carousel-image {
-  width: 100%;
+  display: none; /* Initially hide all images */
+  max-width: 100%;
   height: auto;
-  flex-shrink: 0;
+}
+
+.carousel-image.active {
+  display: block;
+  width: 50vw;
+  height: 50vh;
+  margin: 0 2rem 0 2rem;
 }
 
 .image__carousel .prv-btn, .image__carousel .next-btn {
@@ -240,16 +245,12 @@ body.tritanopia {
   height: 10vh;
 }
 
-.image__carousel .material-icons{ 
+.image__carousel .material-icons {
   color: var(--white);
   font-size: 2rem;
 }
 
-.image__carousel .prv-btn:hover {
-  background-color: var(--neutral-hover);
-  cursor: pointer;
-}
-
+.image__carousel .prv-btn:hover,
 .image__carousel .next-btn:hover {
   background-color: var(--neutral-hover);
   cursor: pointer;
