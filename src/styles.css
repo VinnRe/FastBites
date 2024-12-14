@@ -130,6 +130,22 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins";
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--secondary);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--neutral);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--neutral-hover);
+  }
 }
 
 body {
@@ -203,6 +219,7 @@ body.tritanopia {
   visibility: hidden;
   transition: opacity 0.5s ease, visibility 0.5s ease;
   color: var(--white);
+  height: 100vh;
 }
 
 .popup__section-open {
@@ -215,7 +232,9 @@ body.tritanopia {
   flex-direction: column;
   background-color: var(--primary);
   padding: 2rem;
-  border-radius: 1.5rem;
+  /* border-radius: 1.5rem; */
+  overflow-y: auto;
+  height: 80vh;
 }
 
 .settings__container-top {
@@ -230,6 +249,7 @@ body.tritanopia {
 }
 
 .popup__close span {
+  color: var(--white);
   font-size: 3rem;
 }
 
