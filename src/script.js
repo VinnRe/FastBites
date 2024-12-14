@@ -13,24 +13,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let currentIndex = 0;
 
-    // Initialize: Show the first image
     function updateCarousel() {
         images.forEach((image, index) => {
-            image.classList.toggle("active", index === currentIndex); // Show only the current image
+            image.classList.toggle("active", index === currentIndex);
         });
     }
 
     prevButton.addEventListener("click", function () {
-        currentIndex = (currentIndex - 1 + images.length) % images.length; // Loop back if necessary
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
         updateCarousel();
     });
 
     nextButton.addEventListener("click", function () {
-        currentIndex = (currentIndex + 1) % images.length; // Loop forward if necessary
+        currentIndex = (currentIndex + 1) % images.length;
         updateCarousel();
     });
 
-    // Show the initial image
     updateCarousel();
 
     popOpenBtn.addEventListener("click", function () {
@@ -41,20 +39,19 @@ document.addEventListener("DOMContentLoaded", function () {
         popupSection.classList.remove("popup__section-open");
     });
 
-    // Event listeners for colorblind mode buttons
     cbNormalBtn.addEventListener("click", function () {
-        body.className = ""; // Reset to default mode
+        body.className = "";
     });
 
     cbProBtn.addEventListener("click", function () {
-        body.className = "protanopia"; // Apply protanopia mode
+        body.className = "protanopia";
     });
 
     cbDeuBtn.addEventListener("click", function () {
-        body.className = "deuteranopia"; // Apply deuteranopia mode
+        body.className = "deuteranopia";
     });
 
     cbTriBtn.addEventListener("click", function () {
-        body.className = "tritanopia"; // Apply tritanopia mode
+        body.className = "tritanopia";
     });
 });
