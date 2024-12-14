@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations - Fast Bites</title>
+    <link rel="icon" href="../assets/logo_fast_bites.png">
+    <link rel="stylesheet" href="./styles/location.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../assets/logo_fast_bites.png" alt="logo">
+            <h1 class="poppins-bold">Fast Bites</h1>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="../index.html" class="nav-item">HOME</a></li>
+                <li><a href="./menu.html" class="nav-item">MENU</a></li>
+                <li><a href="./deliveries.html" class="nav-item">DELIVERY</a></li>
+                <li><a href="./about.html" class="nav-item">ABOUT</a></li>
+            </ul>
+        </nav>
+        <button class="settings__button" id="popupOpen"><span class="material-icons">settings</span></button>
+    </header>
+
+    <section class="popup__section" id="popupSection">
+        <div class="settings__container">
+            <div class="settings__container-top">
+                <button class="popup__close" id="popupClose"><span class="material-icons">close</span></button>
+            </div>
+            <div class="colorblind__container">
+                <h2>COLOR BLIND MODE</h2>
+                <div class="cb__container-row1">
+                    <button class="cb__button" id="cbNormal">
+                        <img src="../assets/normal.png" alt="normal_option">
+                        <h2>Normal</h2>
+                    </button>
+                    <button class="cb__button" id="cbPro">
+                        <img src="../assets/protanopia.png" alt="normal_option">
+                        <h2>Protanopia</h2>
+                    </button>
+                </div>
+                <div class="cb__container-row2">
+                    <button class="cb__button" id="cbDeu">
+                        <img src="../assets/dueteranopia.png" alt="normal_option">
+                        <h2>Deuteranopia</h2>
+                    </button>
+                    <button class="cb__button" id="cbTri">
+                        <img src="../assets/tritanopia.png" alt="normal_option">
+                        <h2>Tritanopia</h2>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main__locations">
+        <section class="locations">
+            <h1>Our Locations</h1>
+            <div class="location-list">
+                <div class="location-card">
+                    <img src="../assets/nuciti.jpg" alt="nuciti">
+                    <h3>Batangas</h3>
+                    <p>Nuciti Central Mall, Batangas City</p>
+                    <p>Hours: 8 AM - 10 PM</p>
+                </div>
+                <div class="location-card">
+                    <img src="../assets/smsanpy.jpg" alt="smsanpy">
+                    <h3>Laguna</h3>
+                    <p>SM San Pablo, San Pablo City</p>
+                    <p>Hours: 10 AM - 10 PM</p>
+                </div>
+                <div class="location-card">
+                    <img src="../assets/moa.jpg" alt="moa">
+                    <h3>Metro Manila</h3>
+                    <p>SM Mall of Asia, Pasay, Metro Manila</p>
+                    <p>Hours: 8 AM - 9 PM</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Fast Bites. All Rights Reserved.</p>
+    </footer>
+    <script src="./scripts/location.js"></script>
+</body>
+</html>
