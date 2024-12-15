@@ -1,3 +1,7 @@
+<div>
+    <img src="https://github.com/VinnRe/FastBites/blob/main/src/assets/logo_fast_bites.png" alt="fastbiteslogo">
+</div>
+
 # Fast Bites: A Fast Food Restaurant Website
 
 - **A prototype website that has accessibility for the visually impared in mind**
