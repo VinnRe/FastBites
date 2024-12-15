@@ -412,3 +412,36 @@ footer {
   font-size: 1rem;
   margin-top: 3rem;
 }
+
+@media (max-width: 768px) {
+  .header img {
+    width: 10%; /* Increase logo size for visibility */
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .list__item {
+    border-radius: 1rem;
+  }
+
+  .list__item h3 {
+    font-size: 1rem;
+  }
+
+  .image__carousel {
+    padding: 1.5rem 0 0 0;
+    width: 100%;
+  }
+
+  .image__carousel .prv-btn,
+  .image__carousel .next-btn {
+    width: 15%;
+  }
+
+  footer {
+    margin-top: 6.7rem;
+    width: 100%;
+  }
+}
