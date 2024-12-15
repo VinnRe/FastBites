@@ -57,12 +57,20 @@
 
     <main class="order__main">
         <section class="delivery-section">
+            <section class="popup__section-success" id="popupSuccess" style="display: none;">
+                <div class="popup__success">
+                    <img src="../assets/delivery.png" alt="delivery_logo">
+                    <h3>ORDER PLACED</h3>
+                    <p>Please be ready for your delivery and enjoy your food!</p>
+                </div>
+            </section>            
+
             <h2>Order Online</h2>
             <p class="p__map">Choose location of delivery:</p>
             <img src="../assets/map.png" alt="map" class="map__img">
 
             <p>Select your items and place your order below:</p>
-            
+        
             <form id="orderForm" class="order-form">
                 <div class="menu-item">
                     <label for="burger">Burger</label>
