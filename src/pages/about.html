@@ -15,13 +15,13 @@
         </div>
         <nav>
             <ul class="nav-list">
-                <li><a href="../index.html" class="nav-item">HOME</a></li>
-                <li><a href="./menu.html" class="nav-item">MENU</a></li>
-                <li><a href="./location.html" class="nav-item">LOCATIONS</a></li>
-                <li><a href="./orders.html" class="nav-item">ORDERS</a></li>
+                <li><a href="../index.html" class="nav-item speak-item" data-text="Home">HOME</a></li>
+                <li><a href="./menu.html" class="nav-item speak-item" data-text="Menu">MENU</a></li>
+                <li><a href="./location.html" class="nav-item speak-item" data-text="Locations">LOCATIONS</a></li>
+                <li><a href="./orders.html" class="nav-item speak-item" data-text="Order">ORDER</a></li>
             </ul>
         </nav>
-        <button class="settings__button" id="popupOpen"><span class="material-icons">settings</span></button>
+        <button class="settings__button speak-item" id="popupOpen" data-text="Settings"><span class="material-icons">settings</span></button>
     </header>
 
     <section class="popup__section" id="popupSection">
@@ -30,23 +30,28 @@
                 <button class="popup__close" id="popupClose"><span class="material-icons">close</span></button>
             </div>
             <div class="colorblind__container">
+                <h2>ENABLE TEXT-TO-SPEECH</h2>
+                <label class="switch speak-item" data-text="Enable Text to Speech">
+                    <input type="checkbox" id="ttsToggle">
+                    <span class="slider"></span>
+                </label>
                 <h2>COLOR BLIND MODE</h2>
                 <div class="cb__container-row1">
-                    <button class="cb__button" id="cbNormal">
+                    <button class="cb__button speak-item" id="cbNormal" data-text="Color Blind Mode, Normal">
                         <img src="../assets/normal.png" alt="normal_option">
                         <h2>Normal</h2>
                     </button>
-                    <button class="cb__button" id="cbPro">
+                    <button class="cb__button speak-item" id="cbPro" data-text="Color Blind Mode, Protanopia">
                         <img src="../assets/protanopia.png" alt="normal_option">
                         <h2>Protanopia</h2>
                     </button>
                 </div>
                 <div class="cb__container-row2">
-                    <button class="cb__button" id="cbDeu">
+                    <button class="cb__button speak-item" id="cbDeu" data-text="Color Blind Mode, Deuteranopia">
                         <img src="../assets/dueteranopia.png" alt="normal_option">
                         <h2>Deuteranopia</h2>
                     </button>
-                    <button class="cb__button" id="cbTri">
+                    <button class="cb__button speak-item" id="cbTri" data-text="Color Blind Mode, Tritanopia">
                         <img src="../assets/tritanopia.png" alt="normal_option">
                         <h2>Tritanopia</h2>
                     </button>
@@ -56,7 +61,7 @@
     </section>
 
     <section class="about">
-        <div class="about-container">
+        <div class="about-container speak-item" data-text="About Fast Bites. At Fast Bites, we believe in delivering quick, delicious meals with exceptional customer service. Whether you're craving a burger, fries, or something light, we’ve got you covered. We're committed to using fresh ingredients and offering a fast, satisfying experience for every guest.">
             <img src="../assets/logo_fast_bites.png" alt="logo" style="width: 20%;">
             <h2>About Fast Bites</h2>
             <p>At Fast Bites, we believe in delivering quick, delicious meals with exceptional customer service. Whether you're craving a burger, fries, or something light, we’ve got you covered. We're committed to using fresh ingredients and offering a fast, satisfying experience for every guest.</p>
@@ -64,14 +69,14 @@
     </section>
 
     <section class="mission">
-        <div class="mission-container">
+        <div class="mission-container speak-item" data-text="Our Mission. Our mission is simple: provide high-quality, fast food that brings a smile to every customer’s face. We strive for excellence in every aspect of our service, from the speed of delivery to the taste of our food.">
             <h2>Our Mission</h2>
             <p>Our mission is simple: provide high-quality, fast food that brings a smile to every customer’s face. We strive for excellence in every aspect of our service, from the speed of delivery to the taste of our food.</p>
         </div>
     </section>
 
     <section class="contact">
-        <div class="contact-container">
+        <div class="contact-container speak-item" data-text="Contact Us. If you have any questions, feel free to reach out to us. We’re always happy to hear from our customers! Our email is contact at fastbites dot com and our phone number is plus 1. 2 3 4. 5 6 7. 8 9 0.">
             <h2>Contact Us</h2>
             <p>If you have any questions, feel free to reach out to us. We’re always happy to hear from our customers!</p>
             <p>Email: <a href="mailto:contact@fastbites.com">contact@fastbites.com</a></p>

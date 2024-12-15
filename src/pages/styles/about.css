@@ -153,25 +153,23 @@ body {
 }
   
 body.protanopia {
-    --primary: #6B0000; /* Muted Red */
-    --secondary: #8A2E2E; /* Muted Deep Red */
-    --accent: #4F86F7; /* Deep Blue */
+    --primary: #6B0000;
+    --secondary: #8A2E2E; 
+    --accent: #4F86F7;
 }
 
 body.deuteranopia {
-    --primary: #6B0000; /* Muted Red */
-    --secondary: #944141; /* Darker Muted Red */
-    --accent: #F4D03F; /* Muted Yellow */
+    --primary: #6B0000; 
+    --secondary: #944141; 
+    --accent: #F4D03F;
 }
 
 body.tritanopia {
-    --primary: #6B0000; /* Crimson-like */
-    --secondary: #8A6E6E; /* Neutral Gray-Red */
-    --accent: #CCCCCC; /* Neutral Accent */
+    --primary: #6B0000;
+    --secondary: #8A6E6E;
+    --accent: #CCCCCC;
 }
 
-/* Header styles */
-/* Header and Navigation Styling */
 .header {
     background-color: var(--primary);
     display: flex;
@@ -215,7 +213,7 @@ body.tritanopia {
 }
 
 .nav-list .nav-item:hover {
-    color: var(--accent); /* Mustard Yellow Hover */
+    color: var(--accent);
 }
 
 .settings__button {
@@ -242,7 +240,7 @@ body.tritanopia {
     align-items: center;
     background-color: #00000050;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
@@ -279,6 +277,49 @@ body.tritanopia {
     color: var(--white);
     font-size: 3rem;
   }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--white);
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--neutral);
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--accent);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
   
   .colorblind__container {
     display: flex;
@@ -306,7 +347,6 @@ body.tritanopia {
     transform: scale(1.1);
   }
 
-/* About section styles */
 .about {
     padding: 3rem 2rem;
     background-color: var(--white);
@@ -323,9 +363,8 @@ body.tritanopia {
     margin-bottom: 2rem;
 }
 
-/* Mission section styles */
 .mission {
-    background-color: var(--accent); /* Mustard yellow background */
+    background-color: var(--accent);
     padding: 3rem 2rem;
     text-align: center;
 }
@@ -343,7 +382,6 @@ body.tritanopia {
     margin: 0 auto;
 }
 
-/* Contact section styles */
 .contact {
     padding: 3rem 2rem;
     background-color: var(--white);
@@ -361,7 +399,7 @@ body.tritanopia {
 }
 
 .contact-container a {
-    color: #FF5733; /* Orange color for links */
+    color: #FF5733;
     text-decoration: none;
 }
 
@@ -369,7 +407,6 @@ body.tritanopia {
     text-decoration: underline;
 }
 
-/* Footer styles */
 footer {
     background-color: var(--neutral);
     color: var(--white);
