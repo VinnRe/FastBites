@@ -19,6 +19,11 @@
                 <button class="popup__close" id="popupClose"><span class="material-icons">close</span></button>
             </div>
             <div class="colorblind__container">
+                <h2>ENABLE TEXT-TO-SPEECH</h2>
+                <label class="switch">
+                    <input type="checkbox" id="ttsToggle">
+                    <span class="slider"></span>
+                </label>
                 <h2>COLOR BLIND MODE</h2>
                 <div class="cb__container-row1">
                     <button class="cb__button" id="cbNormal">
@@ -44,25 +49,25 @@
         </div>
     </section>
     <section class="list__section">
-        <a href="./pages/menu.html" class="list__item menu poppins-bold">
+        <a href="./pages/menu.html" class="list__item menu poppins-bold speak-item" data-text="Menu">
             <img src="./assets/menu.png" alt="menu">
             <h3>MENU</h3>
         </a>
-        <a href="./pages/location.html" class="list__item location poppins-bold">
+        <a href="./pages/location.html" class="list__item location poppins-bold speak-item" data-text="Locations">
             <img src="./assets/location.png" alt="">
             <h3>LOCATIONS</h3>
         </a>
-        <a href="./pages/orders.html" class="list__item delivery poppins-bold">
+        <a href="./pages/orders.html" class="list__item delivery poppins-bold speak-item" data-text="Order">
             <img src="./assets/delivery.png" alt="">
             <h3>ORDER</h3>
         </a>
-        <a href="./pages/about.html" class="list__item about poppins-bold">
+        <a href="./pages/about.html" class="list__item about poppins-bold speak-item" data-text="About Us">
             <img src="./assets/about.png" alt="">
             <h3>ABOUT</h3>
         </a>
     </section>
     <section class="image__carousel">
-        <button class="prv-btn" id="previousButton">
+        <button class="prv-btn speak-item" id="previousButton" data-text="Previous Image">
             <span class="material-icons">arrow_back</span>
         </button>
         <div class="images carouselImages">
@@ -70,7 +75,7 @@
             <img src="./assets/ff1.jpg" alt="Image 2" class="carousel-image">
             <img src="./assets/ff3.jpg" alt="Image 3" class="carousel-image">
         </div>
-        <button class="next-btn" id="nextButton">
+        <button class="next-btn speak-item" id="nextButton" data-text="Next Image">
             <span class="material-icons">arrow_forward</span>
         </button>
     </section>
