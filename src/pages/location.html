@@ -15,13 +15,13 @@
         </div>
         <nav>
             <ul class="nav-list">
-                <li><a href="../index.html" class="nav-item">HOME</a></li>
-                <li><a href="./menu.html" class="nav-item">MENU</a></li>
-                <li><a href="./orders.html" class="nav-item">ORDER</a></li>
-                <li><a href="./about.html" class="nav-item">ABOUT</a></li>
+                <li><a href="../index.html" class="nav-item speak-item" data-text="Home">HOME</a></li>
+                <li><a href="./menu.html" class="nav-item speak-item" data-text="Menu">MENU</a></li>
+                <li><a href="./orders.html" class="nav-item speak-item" data-text="Order">ORDER</a></li>
+                <li><a href="./about.html" class="nav-item speak-item" data-text="About">ABOUT</a></li>
             </ul>
         </nav>
-        <button class="settings__button" id="popupOpen"><span class="material-icons">settings</span></button>
+        <button class="settings__button speak-item" id="popupOpen" data-text="Settings"><span class="material-icons">settings</span></button>
     </header>
 
     <section class="popup__section" id="popupSection">
@@ -30,23 +30,28 @@
                 <button class="popup__close" id="popupClose"><span class="material-icons">close</span></button>
             </div>
             <div class="colorblind__container">
+                <h2>ENABLE TEXT-TO-SPEECH</h2>
+                <label class="switch speak-item" data-text="Enable Text to Speech">
+                    <input type="checkbox" id="ttsToggle">
+                    <span class="slider"></span>
+                </label>
                 <h2>COLOR BLIND MODE</h2>
                 <div class="cb__container-row1">
-                    <button class="cb__button" id="cbNormal">
+                    <button class="cb__button speak-item" id="cbNormal" data-text="Color Blind Mode, Normal">
                         <img src="../assets/normal.png" alt="normal_option">
                         <h2>Normal</h2>
                     </button>
-                    <button class="cb__button" id="cbPro">
+                    <button class="cb__button speak-item" id="cbPro" data-text="Color Blind Mode, Protanopia">
                         <img src="../assets/protanopia.png" alt="normal_option">
                         <h2>Protanopia</h2>
                     </button>
                 </div>
                 <div class="cb__container-row2">
-                    <button class="cb__button" id="cbDeu">
+                    <button class="cb__button speak-item" id="cbDeu" data-text="Color Blind Mode, Deuteranopia">
                         <img src="../assets/dueteranopia.png" alt="normal_option">
                         <h2>Deuteranopia</h2>
                     </button>
-                    <button class="cb__button" id="cbTri">
+                    <button class="cb__button speak-item" id="cbTri" data-text="Color Blind Mode, Tritanopia">
                         <img src="../assets/tritanopia.png" alt="normal_option">
                         <h2>Tritanopia</h2>
                     </button>
@@ -59,19 +64,19 @@
         <section class="locations">
             <h1>Our Locations</h1>
             <div class="location-list">
-                <div class="location-card">
+                <div class="location-card speak-item" data-text="Batangas Branch. Nuciti Central Mall, Batangas City. Opened from 8 AM to 10 PM">
                     <img src="../assets/nuciti.jpg" alt="nuciti">
                     <h3>Batangas</h3>
                     <p>Nuciti Central Mall, Batangas City</p>
                     <p>Hours: 8 AM - 10 PM</p>
                 </div>
-                <div class="location-card">
+                <div class="location-card speak-item" data-text="Laguna Branch. SM San Pablo, San Pablo City. Opened from 10 AM to 10 PM">
                     <img src="../assets/smsanpy.jpg" alt="smsanpy">
                     <h3>Laguna</h3>
                     <p>SM San Pablo, San Pablo City</p>
                     <p>Hours: 10 AM - 10 PM</p>
                 </div>
-                <div class="location-card">
+                <div class="location-card speak-item" data-text="Metro Manila Branch. SM Mall of Asia, Pasay, Metro Manila. Opens from 8 AM to 9 PM">
                     <img src="../assets/moa.jpg" alt="moa">
                     <h3>Metro Manila</h3>
                     <p>SM Mall of Asia, Pasay, Metro Manila</p>

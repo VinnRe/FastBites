@@ -31,4 +31,35 @@ document.addEventListener("DOMContentLoaded", function () {
     cbTriBtn.addEventListener("click", function () {
         body.className = "tritanopia";
     });
+
+    if ('speechSynthesis' in window) {
+        const speakItems = document.querySelectorAll(".speak-item");
+        const ttsToggle = document.getElementById("ttsToggle");
+    
+        let ttsEnabled = false;
+    
+        ttsToggle.addEventListener("change", () => {
+            ttsEnabled = ttsToggle.checked;
+        });
+    
+        const speakText = (text) => {
+            if (!ttsEnabled) return;
+    
+            window.speechSynthesis.cancel();
+    
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.rate = 1;
+            utterance.pitch = 1;
+            window.speechSynthesis.speak(utterance);
+        };
+    
+        speakItems.forEach(item => {
+            item.addEventListener("mouseenter", () => {
+                const text = item.getAttribute("data-text");
+                speakText(text);
+            });
+        });
+    } else {
+        console.error("Speech synthesis is not supported in this browser.");
+    }
 });
