@@ -585,4 +585,8 @@ footer {
   .settings__button {
       display: none;
   }
+
+  .settings__container {
+    position: fixed;
+  }
 }
