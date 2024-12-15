@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const popOpenBtn = document.getElementById("popupOpen");
+    const popOpenBtnM = document.getElementById("popupOpenM");
     const popCloseBtn = document.getElementById("popupClose");
     const popupSection = document.getElementById("popupSection");
     const cbNormalBtn = document.getElementById("cbNormal");
@@ -7,6 +8,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const cbDeuBtn = document.getElementById("cbDeu");
     const cbTriBtn = document.getElementById("cbTri");
     const body = document.body;
+
+    document.getElementById('hamburgerMenu').addEventListener('click', function () {
+        const navMenu = document.getElementById('navMenu');
+        navMenu.classList.toggle('show');
+        console.log(":ASLJKDA")
+    });
+
+    document.getElementById('closeMenu').addEventListener('click', function () {
+        const navMenu = document.getElementById('navMenu');
+        navMenu.classList.remove('show');
+    });
+      
+    popOpenBtnM.addEventListener("click", function () {
+        popupSection.classList.add("popup__section-open");
+    });
 
     popOpenBtn.addEventListener("click", function () {
         popupSection.classList.add("popup__section-open");
