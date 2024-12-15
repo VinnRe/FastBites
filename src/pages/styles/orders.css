@@ -348,11 +348,11 @@ body.tritanopia {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Ensure it's on top of everything */
+  z-index: 1000;
 }
 
 .popup__success {
-  background: var(--primary);
+  background: var(--secondary);
   padding: 20px 30px;
   border-radius: 8px;
   text-align: center;
@@ -367,7 +367,7 @@ body.tritanopia {
 }
 
 .popup__success h3 {
-  color: var(--white);
+  color: var(--accent);
   font-size: 24px;
   margin-bottom: 10px;
 }
