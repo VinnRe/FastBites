@@ -15,10 +15,10 @@
         </div>
         <nav>
             <ul class="nav-list">
-                <li><a href="../index.html" class="nav-item">HOME</a></li>
-                <li><a href="./location.html" class="nav-item">LOCATIONS</a></li>
-                <li><a href="./orders.html" class="nav-item">ORDER</a></li>
-                <li><a href="./about.html" class="nav-item">ABOUT</a></li>
+                <li><a href="../index.html" class="nav-item speak-item" data-text="Home">HOME</a></li>
+                <li><a href="./location.html" class="nav-item speak-item" data-text="Locations">LOCATIONS</a></li>
+                <li><a href="./orders.html" class="nav-item speak-item" data-text="Order">ORDER</a></li>
+                <li><a href="./about.html" class="nav-item speak-item" data-text="About Us">ABOUT</a></li>
             </ul>
         </nav>
         <button class="settings__button" id="popupOpen"><span class="material-icons">settings</span></button>
@@ -27,26 +27,31 @@
     <section class="popup__section" id="popupSection">
         <div class="settings__container">
             <div class="settings__container-top">
-                <button class="popup__close" id="popupClose"><span class="material-icons">close</span></button>
+                <button class="popup__close speak-item" id="popupClose" data-text="Close Settings"><span class="material-icons">close</span></button>
             </div>
             <div class="colorblind__container">
+                <h2>ENABLE TEXT-TO-SPEECH</h2>
+                <label class="switch speak-item" data-text="Enable Text to Speech">
+                    <input type="checkbox" id="ttsToggle">
+                    <span class="slider"></span>
+                </label>
                 <h2>COLOR BLIND MODE</h2>
                 <div class="cb__container-row1">
-                    <button class="cb__button" id="cbNormal">
+                    <button class="cb__button speak-item" id="cbNormal" data-text="Color Blind Mode, Normal">
                         <img src="../assets/normal.png" alt="normal_option">
                         <h2>Normal</h2>
                     </button>
-                    <button class="cb__button" id="cbPro">
+                    <button class="cb__button speak-item" id="cbPro" data-text="Color Blind Mode, Protanopia">
                         <img src="../assets/protanopia.png" alt="normal_option">
                         <h2>Protanopia</h2>
                     </button>
                 </div>
                 <div class="cb__container-row2">
-                    <button class="cb__button" id="cbDeu">
+                    <button class="cb__button speak-item" id="cbDeu" data-text="Color Blind Mode, Deuteranopia">
                         <img src="../assets/dueteranopia.png" alt="normal_option">
                         <h2>Deuteranopia</h2>
                     </button>
-                    <button class="cb__button" id="cbTri">
+                    <button class="cb__button speak-item" id="cbTri" data-text="Color Blind Mode, Tritanopia">
                         <img src="../assets/tritanopia.png" alt="normal_option">
                         <h2>Tritanopia</h2>
                     </button>
@@ -58,25 +63,25 @@
     <section class="menu-section">
         <h2>Our Delicious Menu</h2>
         <div class="menu-grid">
-            <div class="menu-item">
+            <div class="menu-item speak-item"  data-text="Classic Burger. Juicy beef patty, fresh lettuce, tomatoes, and our special sauce. Costs 120 pesos. ">
                 <img src="../assets/burger.jpg" alt="Burger">
                 <h3>Classic Burger</h3>
                 <p>Juicy beef patty, fresh lettuce, tomatoes, and our special sauce.</p>
                 <span>₱120</span>
             </div>
-            <div class="menu-item">
+            <div class="menu-item speak-item" data-text="Golden Fries. Perfectly crispy and seasoned to perfection. Costs 50 Pesos.">
                 <img src="../assets/fries.jpg" alt="Fries">
                 <h3>Golden Fries</h3>
                 <p>Perfectly crispy and seasoned to perfection.</p>
                 <span>₱50</span>
             </div>
-            <div class="menu-item">
+            <div class="menu-item speak-item" data-text="Cheesy Pizza. Loaded with mozzarella, pepperoni, and fresh basil. Costs 150 Pesos.">
                 <img src="../assets/pizza.jpg" alt="Pizza">
                 <h3>Cheesy Pizza</h3>
                 <p>Loaded with mozzarella, pepperoni, and fresh basil.</p>
                 <span>₱150</span>
             </div>
-            <div class="menu-item">
+            <div class="menu-item speak-item" data-text="Chocolate Shake. Rich and creamy shake with a touch of chocolate goodness. Costs 35 Pesos.">
                 <img src="../assets/shake.jpg" alt="Shake">
                 <h3>Chocolate Shake</h3>
                 <p>Rich and creamy shake with a touch of chocolate goodness.</p>
