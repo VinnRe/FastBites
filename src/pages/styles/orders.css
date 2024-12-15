@@ -330,6 +330,15 @@ body.tritanopia {
     color: #555;
 }
 
+.delivery-section .map__img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.delivery-section .p__map {
+  margin-bottom: 0;
+}
+
 .order-form {
     display: flex;
     flex-direction: column;
