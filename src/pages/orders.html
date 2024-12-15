@@ -15,13 +15,13 @@
         </div>
         <nav>
             <ul class="nav-list">
-                <li><a href="../index.html" class="nav-item">HOME</a></li>
-                <li><a href="./location.html" class="nav-item">LOCATIONS</a></li>
-                <li><a href="./orders.html" class="nav-item">ORDER</a></li>
-                <li><a href="./about.html" class="nav-item">ABOUT</a></li>
+                <li><a href="../index.html" class="nav-item speak-item" data-text="Home">HOME</a></li>
+                <li><a href="./menu.html" class="nav-item speak-item" data-text="Menu">MENU</a></li>
+                <li><a href="./location.html" class="nav-item speak-item" data-text="Locations">LOCATIONS</a></li>
+                <li><a href="./about.html" class="nav-item speak-item" data-text="About">ABOUT</a></li>
             </ul>
         </nav>
-        <button class="settings__button" id="popupOpen"><span class="material-icons">settings</span></button>
+        <button class="settings__button speak-item" id="popupOpen" data-text="Settings"><span class="material-icons">settings</span></button>
     </header>
 
     <section class="popup__section" id="popupSection">
@@ -30,23 +30,28 @@
                 <button class="popup__close" id="popupClose"><span class="material-icons">close</span></button>
             </div>
             <div class="colorblind__container">
+                <h2>ENABLE TEXT-TO-SPEECH</h2>
+                <label class="switch speak-item" data-text="Enable Text to Speech">
+                    <input type="checkbox" id="ttsToggle">
+                    <span class="slider"></span>
+                </label>
                 <h2>COLOR BLIND MODE</h2>
                 <div class="cb__container-row1">
-                    <button class="cb__button" id="cbNormal">
+                    <button class="cb__button speak-item" id="cbNormal" data-text="Color Blind Mode, Normal">
                         <img src="../assets/normal.png" alt="normal_option">
                         <h2>Normal</h2>
                     </button>
-                    <button class="cb__button" id="cbPro">
+                    <button class="cb__button speak-item" id="cbPro" data-text="Color Blind Mode, Protanopia">
                         <img src="../assets/protanopia.png" alt="normal_option">
                         <h2>Protanopia</h2>
                     </button>
                 </div>
                 <div class="cb__container-row2">
-                    <button class="cb__button" id="cbDeu">
+                    <button class="cb__button speak-item" id="cbDeu" data-text="Color Blind Mode, Deuteranopia">
                         <img src="../assets/dueteranopia.png" alt="normal_option">
                         <h2>Deuteranopia</h2>
                     </button>
-                    <button class="cb__button" id="cbTri">
+                    <button class="cb__button speak-item" id="cbTri" data-text="Color Blind Mode, Tritanopia">
                         <img src="../assets/tritanopia.png" alt="normal_option">
                         <h2>Tritanopia</h2>
                     </button>
@@ -57,7 +62,7 @@
 
     <main class="order__main">
         <section class="delivery-section">
-            <section class="popup__section-success" id="popupSuccess" style="display: none;">
+            <section class="popup__section-success speak-item" id="popupSuccess" style="display: none;" data-text="Order Placed!">
                 <div class="popup__success">
                     <img src="../assets/delivery.png" alt="delivery_logo">
                     <h3>ORDER PLACED</h3>
@@ -67,31 +72,31 @@
 
             <h2>Order Online</h2>
             <p class="p__map">Choose location of delivery:</p>
-            <img src="../assets/map.png" alt="map" class="map__img">
+            <img src="../assets/map.png" alt="map" class="map__img speak-item" data-text="Choose location">
 
             <p>Select your items and place your order below:</p>
         
             <form id="orderForm" class="order-form">
-                <div class="menu-item">
-                    <label for="burger">Burger</label>
+                <div class="menu-item speak-item" data-text="Classic Burger">
+                    <label for="burger">Classic Burger</label>
                     <input type="number" id="burger" name="burger" min="0" max="10" placeholder="Qty">
                 </div>
-                <div class="menu-item">
-                    <label for="fries">Fries</label>
+                <div class="menu-item speak-item" data-text="Golden Fries">
+                    <label for="fries">Golden Fries</label>
                     <input type="number" id="fries" name="fries" min="0" max="10" placeholder="Qty">
                 </div>
-                <div class="menu-item">
-                    <label for="pizza">Pizza</label>
+                <div class="menu-item speak-item" data-text="Cheesy Pizza">
+                    <label for="pizza">Cheesy Pizza</label>
                     <input type="number" id="pizza" name="pizza" min="0" max="10" placeholder="Qty">
                 </div>
-                <div class="menu-item">
-                    <label for="shake">Shake</label>
+                <div class="menu-item speak-item" data-text="Chocolate Shake">
+                    <label for="shake">Chocolate Shake</label>
                     <input type="number" id="shake" name="shake" min="0" max="10" placeholder="Qty">
                 </div>
-                <button type="submit" class="submit-btn">Place Order</button>
+                <button type="submit" class="submit-btn speak-item" data-text="Place Order">Place Order</button>
             </form>
 
-            <div id="orderSummary" class="order-summary">
+            <div id="orderSummary" class="order-summary speak-item" data-text="Order Summary">
                 <h3>Order Summary</h3>
                 <p id="summaryText">No items ordered yet.</p>
             </div>
